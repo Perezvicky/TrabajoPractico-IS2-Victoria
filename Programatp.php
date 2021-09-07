@@ -14,7 +14,7 @@ function Factorialde($Digito)
 }
 function AlCubo($Digito)
 {
-    for($i=1; $i <= 3, $i++)
+    for($i=1; $i <= 3; $i++)
     {
         $Prod = $Prod * $Digito;
     }
@@ -22,5 +22,4 @@ function AlCubo($Digito)
 }
 
 Factorialde($Factorial);
-
 ?>

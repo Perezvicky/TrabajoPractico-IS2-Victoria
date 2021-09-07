@@ -1,5 +1,5 @@
 <?php
-$Factorial = rand(1,20);
+$Numero= rand(1,20);
 
 function Factorialde($Digito)
 {
@@ -9,8 +9,7 @@ function Factorialde($Digito)
     {
         $Mul = $Mul * $i;
     } 
-    echo $Mul. "<br>";
-    echo $Digito. "<br>";
+    echo "El resultado de realizar el factorial de ". $Digito . " es " . $Mul. "<br>";
 }
 function AlCubo($Digito)
 {
@@ -19,8 +18,11 @@ function AlCubo($Digito)
     {
         $Prod = $Prod * $Digito;
     }
-    echo $Prod;
+    echo "El resultado de realizar el cubo de ". $Digito. " es ". $Prod. "<br>";
 }
 
-Factorialde($Factorial);
+
+
+Factorialde($Numero);
+Alcubo($Numero);
 ?>

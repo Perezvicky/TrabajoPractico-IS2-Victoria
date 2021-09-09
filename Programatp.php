@@ -1,28 +1,34 @@
 <?php
-$Numero= rand(1,20);
+$numero= rand(1,20);
 
-function Factorialde($Digito)
+function Factorialde($digito)
 {
-    $Mul = 1;
+    $mul = 1;
 
-    for($i=$Digito; $i > 0; $i--)
+    for($i=$digito; $i > 0; $i--)
     {
-        $Mul = $Mul * $i;
+        $mul = $mul * $i;
     } 
-    echo "El resultado de realizar el factorial de ". $Digito . " es " . $Mul. "<br>";
+    echo "El resultado de realizar el factorial de ". $digito . " es " . $mul. "<br>";
 }
-function AlCubo($Digito)
+function AlCubo($digito)
 {
-    $Prod = 1;
+    $prod = 1;
     for($i=1; $i <= 3; $i++)
     {
-        $Prod = $Prod * $Digito;
+        $prod = $prod * $digito;
     }
-    echo "El resultado de realizar el cubo de ". $Digito. " es ". $Prod. "<br>";
+    echo "El resultado de realizar el cubo de ". $digito. " es ". $prod. "<br>";
+}
+
+function parOimpar($digito){
+    if($digito%2==0){
+        return "$digito es par"; 
+    }else return "$digito es impar";
 }
 
 
-
-Factorialde($Numero);
-Alcubo($Numero);
+Factorialde($numero);
+Alcubo($numero);
+echo parOimpar($numero);
 ?>
